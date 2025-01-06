@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L] 
+# RewriteRule ^service/([a-zA-Z0-9-/.]+)$ service-detail.php?slug=$1
+RewriteRule ^blogs/([a-zA-Z0-9-/.]+)$ blog-detail.php?slug=$1
+# RewriteRule ^locations/([a-zA-Z0-9-/.]+)$ location.php?slug=$1
+# RewriteRule ^([a-zA-Z0-9-/]+)/([a-zA-Z0-9-/]+)$ blog-detail.php?top=1&mid=$2
+# RewriteRule ^([a-zA-Z0-9-/]+)$ blog.php?slug=$1
+# RewriteRule ^Products-details/([a-zA-Z0-9-/.]+)$ detail.php?slug=$1
